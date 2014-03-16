@@ -22,7 +22,7 @@ public:
     ZCubo( zeShader *_shader );
     ZEntidadDibujable * get_dibujable( ){ return &dibujable; };
     void update();
-    
+    void draw();
 };
 
 

@@ -10,10 +10,8 @@
 #define __ZExperimental__ZEscenaController__
 
 #include <iostream>
-#include "zeShader.h"
-#include "CFreeCamara.h"
 #include "ZCube.h"
-#include "ZPintadoController.h"
+
 
 
 #define PATH "/Users/cesarvr/Desktop/GameErr9E/Proyectos/ZExperimental/shader/"
@@ -25,7 +23,6 @@ class EscenaController {
 private:
     zeShader _shader;
     CFreeCamera _camara;
-    Pintado pintado;
     ZCubo cubo;
     
 public:

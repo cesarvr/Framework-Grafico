@@ -37,5 +37,16 @@ ZCubo::ZCubo( zeShader *_shader ){
 void ZCubo::update(){
     
     dibujable.get_posicion()->set_posicion(0, 0, 0);
-    
+    dibujable.update();
 }
+
+
+void ZCubo::draw(){
+
+    dibujable.draw();
+
+}
+
+
+
+

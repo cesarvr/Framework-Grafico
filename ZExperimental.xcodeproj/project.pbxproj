@@ -97,7 +97,6 @@
 		B5E1E92B18D4B8F5004D8FCF /* ZEscenaController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5E1E92918D4B8F5004D8FCF /* ZEscenaController.cpp */; };
 		B5E1E92E18D4B9BA004D8FCF /* ZGeometriaObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5E1E92C18D4B9BA004D8FCF /* ZGeometriaObject.cpp */; };
 		B5E1E93118D4BC06004D8FCF /* ZCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5E1E92F18D4BC06004D8FCF /* ZCube.cpp */; };
-		B5E1E93418D4C577004D8FCF /* ZPintadoController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5E1E93218D4C577004D8FCF /* ZPintadoController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -360,8 +359,6 @@
 		B5E1E92D18D4B9BA004D8FCF /* ZGeometriaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZGeometriaObject.h; path = ZExperimental/ZGeometriaObject.h; sourceTree = "<group>"; };
 		B5E1E92F18D4BC06004D8FCF /* ZCube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZCube.cpp; sourceTree = "<group>"; };
 		B5E1E93018D4BC06004D8FCF /* ZCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCube.h; sourceTree = "<group>"; };
-		B5E1E93218D4C577004D8FCF /* ZPintadoController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZPintadoController.cpp; sourceTree = "<group>"; };
-		B5E1E93318D4C577004D8FCF /* ZPintadoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPintadoController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -429,8 +426,6 @@
 				B5B13A1318D4DE5B00F85C9D /* entidad */,
 				B5C6590318CE44E900F66C71 /* glm */,
 				B5C658F418CE3FDA00F66C71 /* main.cpp */,
-				B5E1E93218D4C577004D8FCF /* ZPintadoController.cpp */,
-				B5E1E93318D4C577004D8FCF /* ZPintadoController.h */,
 				B5E1E92F18D4BC06004D8FCF /* ZCube.cpp */,
 				B5E1E93018D4BC06004D8FCF /* ZCube.h */,
 				B5E1E92918D4B8F5004D8FCF /* ZEscenaController.cpp */,
@@ -834,7 +829,6 @@
 				B5B13A6618D4F37100F85C9D /* type_vec4.inl in Sources */,
 				B5B13A6718D4F37100F85C9D /* ext.hpp in Sources */,
 				B5B13A6818D4F37100F85C9D /* glm.hpp in Sources */,
-				B5E1E93418D4C577004D8FCF /* ZPintadoController.cpp in Sources */,
 				B5E1E92E18D4B9BA004D8FCF /* ZGeometriaObject.cpp in Sources */,
 				B5C658F518CE3FDA00F66C71 /* main.cpp in Sources */,
 				B5B13A1218D4DD5700F85C9D /* ZEntidadDibujable.cpp in Sources */,

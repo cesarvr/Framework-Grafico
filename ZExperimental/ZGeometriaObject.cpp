@@ -10,16 +10,13 @@
 #include "glfw3.h"
 
 
-ZGeometriaObject::ZGeometriaObject( zeShader *_shader ){
+ZGeometriaObject::ZGeometriaObject(){
    
-    shader = _shader;
-    tamano_paquete_datos = 
-    
-    
+
 }
 
 
-void ZGeometriaObject::set_vertices(float *vertices_ptr, int tamano_ptr){
+void ZGeometriaObject::set_vertices( float *vertices_ptr, int tamano_ptr ){
     
     glGenBuffers(1, &verticesBufferObject);
     glBindBuffer(GL_ARRAY_BUFFER, verticesBufferObject);
@@ -27,7 +24,7 @@ void ZGeometriaObject::set_vertices(float *vertices_ptr, int tamano_ptr){
     
 }
 
-void ZGeometriaObject::set_indices(unsigned short *indices, int tamano_ptr){
+void ZGeometriaObject::set_indices( unsigned short *indices, int tamano_ptr ){
 
     
     glGenBuffers(1, &indicesBufferObject);
@@ -40,7 +37,7 @@ void ZGeometriaObject::set_indices(unsigned short *indices, int tamano_ptr){
     
 }
 
-int    ZGeometriaObject::get_tamano_paquete() { return tamano_paquete_datos; }
+
 int    ZGeometriaObject::get_numero_vertices(){ return  numero_vertices; };
 GLuint ZGeometriaObject::get_vbo()            { return verticesBufferObject; }
 GLuint ZGeometriaObject::get_vbi()            { return indicesBufferObject;  }

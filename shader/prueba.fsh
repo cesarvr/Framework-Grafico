@@ -17,7 +17,7 @@ void main (void)
 {
     
   //  vec4 text_color = texture2D(textura, textura_cord_out);
-    vec4 text_color = vec4(0.7,0.2,0.2,1.0);
+    vec4 text_color = vec4(0.7,0.7,0.2,1.0);
     gl_FragColor = text_color; //* vec4(Intencidad_de_luz , 1.0) ;
   
 }

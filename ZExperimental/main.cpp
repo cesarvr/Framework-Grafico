@@ -8,6 +8,8 @@
 
 #include <iostream>
 #include "glfw3.h"
+#include "ZEscenaController.h"
+
 
 using namespace std;
 
@@ -34,7 +36,7 @@ int main(int argc, const char * argv[])
 
     glfwSetErrorCallback(error_callback);
     
-    GLFWwindow* window = glfwCreateWindow(SCREEN_ANCHO, SCREEN_ALTO, "Taller", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCREEN_ANCHO, SCREEN_ALTO, "xX Path Xx", NULL, NULL);
     
     
     if (!window)
@@ -48,15 +50,20 @@ int main(int argc, const char * argv[])
     // Make the window's context current
     glfwMakeContextCurrent(window);
     
-    //  printf("\n version: %s \n", glfwGetVersionString());
-    printf("\n OpenGL [version]: %s ", glGetString(GL_VERSION));
-    printf("\n OpenGL [vendor]: %s \n",glGetString(GL_VENDOR));
+    
+    cout << " OpenGL [ Version  ]: " << glGetString(GL_VERSION) << endl;
+    cout << " OpenGL [ Vendor   ]: " << glGetString(GL_VENDOR) << endl;
+    cout << " OpenGL [ Renderer ]: " << glGetString(GL_RENDERER) << endl;
     
 
+    
+    EscenaController escena;
     
     
     while (!glfwWindowShouldClose(window))
     {
+        escena.update();
+        escena.draw();
  
         glfwSwapBuffers(window);
         glfwPollEvents();

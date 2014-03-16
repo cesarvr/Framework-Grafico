@@ -19,15 +19,10 @@
 class ZEntidadDibujable {
 private:
     
-    ZGeometriaObject *objGLBuffer;
-    Posicion *modelo;
+    ZGeometriaObject objGLBuffer;
+    Posicion modelo;
     zeShader *shader;
     CFreeCamera *camara;
-    
-    
-    
-    
-    
     
 public:
     

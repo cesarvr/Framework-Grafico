@@ -14,9 +14,8 @@ EscenaController::EscenaController(): _shader(SHADER, PATH), cubo( &_shader ){
 
     _camara.SetupProjection();
     
-    
-    
-    pintado.add_entidad_dibujable( cubo.get_dibujable() );
+    _camara.Walk( 0.0f );
+    _camara.Strafe( 0.0f );
     
 
 
@@ -24,18 +23,17 @@ EscenaController::EscenaController(): _shader(SHADER, PATH), cubo( &_shader ){
 
 void EscenaController::draw(){
 
-
-
-
-    pintado.draw();
-
+    cubo.draw();
 
 }
 
 
 void EscenaController::update(){
-
-
-    pintado.update();
-
+   
+    _camara.Update();
+    cubo.get_dibujable()->set_camara( &_camara );
+ 
+    
+    cubo.update();
+    
 }
