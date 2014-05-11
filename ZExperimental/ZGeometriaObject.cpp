@@ -1,4 +1,4 @@
-//
+    //
 //  ZGeometriaObject.cpp
 //  ZExperimental
 //
@@ -12,6 +12,7 @@
 
 ZGeometriaObject::ZGeometriaObject(){
    
+    vertices_tamano = ( TAMANO_POSICION + TAMANO_NORMAL ) * sizeof(float);
 
 }
 
@@ -32,12 +33,10 @@ void ZGeometriaObject::set_indices( unsigned short *indices, int tamano_ptr ){
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, tamano_ptr, indices, GL_STATIC_DRAW);
     
     numero_vertices = tamano_ptr / sizeof(unsigned short);
-    
-    
-    
+        
 }
 
 
-int    ZGeometriaObject::get_numero_vertices(){ return  numero_vertices; };
-GLuint ZGeometriaObject::get_vbo()            { return verticesBufferObject; }
-GLuint ZGeometriaObject::get_vbi()            { return indicesBufferObject;  }
+int    ZGeometriaObject::get_numero_vertices() { return  numero_vertices; };
+GLuint ZGeometriaObject::get_vbo()             { return verticesBufferObject; }
+GLuint ZGeometriaObject::get_vbi()             { return indicesBufferObject;  }

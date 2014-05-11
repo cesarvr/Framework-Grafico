@@ -16,8 +16,8 @@ EscenaController::EscenaController(): _shader(SHADER, PATH), cubo( &_shader ){
     
     _camara.Walk( 0.0f );
     _camara.Strafe( 0.0f );
-    
-
+    _camara.SetPosition(vec3(0.0f, 0.0f ,-10.0f));
+                        
 
 }
 

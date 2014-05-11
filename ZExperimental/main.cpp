@@ -17,7 +17,13 @@ using namespace std;
 #define SCREEN_ALTO 600
 
 
-
+GLboolean ARRIBA = false;
+GLboolean ABAJO = false;
+GLboolean DERECHA = false;
+GLboolean IZQUIERDA = false;
+GLboolean KEY_Q = false;
+GLboolean KEY_E = false;
+static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
 
 void error_callback(int error, const char* description)
 {
@@ -58,7 +64,7 @@ int main(int argc, const char * argv[])
 
     
     EscenaController escena;
-    
+    glfwSetKeyCallback(window, key_callback);
     
     while (!glfwWindowShouldClose(window))
     {
@@ -78,5 +84,49 @@ int main(int argc, const char * argv[])
     
     
     return 0;
+}
+
+
+static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+        glfwSetWindowShouldClose(window, GL_TRUE);
+    
+    if (key == GLFW_KEY_A &&  (action == GLFW_REPEAT || action == GLFW_PRESS)) {
+        IZQUIERDA = true;
+    }else
+        IZQUIERDA = false;
+    
+    if (key == GLFW_KEY_S &&   (action == GLFW_REPEAT || action == GLFW_PRESS)) {
+        ABAJO = true;
+    }else
+        ABAJO = false;
+    
+    if (key == GLFW_KEY_D &&   (action == GLFW_REPEAT || action == GLFW_PRESS)) {
+        DERECHA = true;
+    }else
+        DERECHA = false;
+    
+    if (key == GLFW_KEY_W &&   (action == GLFW_REPEAT || action == GLFW_PRESS)) {
+        ARRIBA = true;
+        
+    }else{
+        ARRIBA = false;
+    }
+    
+    if (key == GLFW_KEY_Q &&  (action == GLFW_REPEAT || action == GLFW_PRESS) ) {
+        KEY_Q = true;
+    }else{
+        KEY_Q = false;
+    }
+    
+    
+    if (key == GLFW_KEY_E  &&  (action == GLFW_REPEAT || action == GLFW_PRESS) ) {
+        KEY_E = true;
+    }else{
+        KEY_E = false;
+    }
+    
+    
 }
 

@@ -46,13 +46,12 @@ void zeShader::cargarShader(std::string shader, std::string path){
 
     
     
-
-        std::cout << std::endl << "iniciando compilacion de los shader"<< std::endl;
+    std::cout << std::endl << "iniciando compilacion de los shader"<< std::endl;
         
-        vertex_shader   = zeShader::compilarShader(vertex, GL_VERTEX_SHADER);
-        fragment_shader = zeShader::compilarShader(fragment, GL_FRAGMENT_SHADER);
+    vertex_shader   = zeShader::compilarShader(vertex, GL_VERTEX_SHADER);
+    fragment_shader = zeShader::compilarShader(fragment, GL_FRAGMENT_SHADER);
         
-        std::cout << std::endl << "iniciando compilacion de los shader [fin]"<< std::endl;
+    std::cout << std::endl << "iniciando compilacion de los shader [fin]"<< std::endl;
 
     
     
@@ -212,8 +211,7 @@ GLuint zeShader::getParametros(const char *parametros){
 
 std::string zeShader::loadFicheroShader(std::string nombreFichero){
 
-    printf("[fichero de configuracion [cargando..]]");
-    
+    std::cout << std::endl << "cargando fichero: " << nombreFichero << std::endl;
     
     std::ifstream inFichero(nombreFichero);
     

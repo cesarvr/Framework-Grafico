@@ -16,14 +16,14 @@ ZCubo::ZCubo( zeShader *_shader ){
     
     
 
-    float vertices[] = {
-                            -0.5f, 1.0f, 1.0f, 0.0f, 1.0f, 0.0f,
-                             1.0f, 1.0f, 1.0f, 0.0f, 1.0f, 0.0f,
-                            -0.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f,
-                             1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f,
+    GLfloat vertices[] = {
+                            -1.5f, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f,
+                             1.0f, 1.0f, 0.0f, 1.0f, 1.0f, 1.0f,
+                            -1.5f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f,
+                             1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f,
     };
     
-    unsigned short indices[] = {1,2,3,4};
+    unsigned short indices[] = {0,1,2,3};
     
     
     dibujable.get_buffer()->set_vertices( vertices, sizeof(vertices) );

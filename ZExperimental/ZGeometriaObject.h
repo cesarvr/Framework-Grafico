@@ -18,7 +18,7 @@
 #define TAMANO_COLOR 3 
 #define TAMANO_TEXTURA 2
 
-#define TAMANO_PACK  (TAMANO_POSICION+TAMANO_NORMAL) * sizeof( float )
+
 
 class ZGeometriaObject {
 private:
@@ -26,12 +26,15 @@ private:
     GLuint verticesBufferObject;
     GLuint indicesBufferObject;
     
-    int numero_vertices;
     
-    unsigned int posicion_shader;
+    
+    int numero_vertices;
     
     
 public:
+    
+    int vertices_tamano;
+    
     ZGeometriaObject();
     
     int get_numero_vertices();
@@ -40,7 +43,7 @@ public:
     void set_indices( unsigned short *indices, int tamano );
     
     
-    GLuint get_posicion_shader(){ return posicion_shader; };
+   
     GLuint get_vbo();
     GLuint get_vbi();
     

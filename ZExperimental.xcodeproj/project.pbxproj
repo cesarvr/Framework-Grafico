@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B55E959A18D79DEA00388DB8 /* Entrada.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B55E959818D79DEA00388DB8 /* Entrada.cpp */; };
 		B5B13A0818D4D4E500F85C9D /* ZPosicion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5B13A0618D4D4E500F85C9D /* ZPosicion.cpp */; };
 		B5B13A0E18D4DA0200F85C9D /* zeShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5B13A0C18D4DA0200F85C9D /* zeShader.cpp */; };
 		B5B13A1218D4DD5700F85C9D /* ZEntidadDibujable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5B13A1018D4DD5700F85C9D /* ZEntidadDibujable.cpp */; };
@@ -113,6 +114,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B55E959818D79DEA00388DB8 /* Entrada.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entrada.cpp; sourceTree = "<group>"; };
+		B55E959918D79DEA00388DB8 /* Entrada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entrada.h; sourceTree = "<group>"; };
 		B5B13A0618D4D4E500F85C9D /* ZPosicion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZPosicion.cpp; path = ZExperimental/ZPosicion.cpp; sourceTree = "<group>"; };
 		B5B13A0718D4D4E500F85C9D /* ZPosicion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZPosicion.h; path = ZExperimental/ZPosicion.h; sourceTree = "<group>"; };
 		B5B13A0C18D4DA0200F85C9D /* zeShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zeShader.cpp; sourceTree = "<group>"; };
@@ -386,6 +389,8 @@
 				B5B13A0718D4D4E500F85C9D /* ZPosicion.h */,
 				B5E1E92C18D4B9BA004D8FCF /* ZGeometriaObject.cpp */,
 				B5E1E92D18D4B9BA004D8FCF /* ZGeometriaObject.h */,
+				B55E959818D79DEA00388DB8 /* Entrada.cpp */,
+				B55E959918D79DEA00388DB8 /* Entrada.h */,
 			);
 			name = entidad;
 			path = ..;
@@ -818,6 +823,7 @@
 				B5B13A5B18D4F37100F85C9D /* type_mat4x4.inl in Sources */,
 				B5B13A5C18D4F37100F85C9D /* type_size.hpp in Sources */,
 				B5B13A5D18D4F37100F85C9D /* type_vec.hpp in Sources */,
+				B55E959A18D79DEA00388DB8 /* Entrada.cpp in Sources */,
 				B5B13A5E18D4F37100F85C9D /* type_vec.inl in Sources */,
 				B5B13A5F18D4F37100F85C9D /* type_vec1.hpp in Sources */,
 				B5B13A6018D4F37100F85C9D /* type_vec1.inl in Sources */,

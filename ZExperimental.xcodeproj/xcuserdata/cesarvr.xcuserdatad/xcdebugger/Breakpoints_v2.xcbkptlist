@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ZExperimental/ZEntidadDibujable.cpp"
-            timestampString = "416704611.433811"
+            filePath = "ZExperimental/ZGeometriaObject.cpp"
+            timestampString = "416783357.674079"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "ZEntidadDibujable::update()"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "ZGeometriaObject::set_vertices( float *vertices_ptr, int tamano_ptr )"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ZExperimental/ZEntidadDibujable.cpp"
-            timestampString = "416704735.976288"
+            filePath = "ZExperimental/ZCube.cpp"
+            timestampString = "416783504.321427"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "ZEntidadDibujable::update()"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "ZCubo::ZCubo( zeShader *_shader )"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

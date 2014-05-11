@@ -47,8 +47,8 @@ glm::mat4 CAbstractCamera::GetMatrixUsingYawPitchRoll(const float yaw, const flo
     
 	glm::mat4 R=glm::mat4(1);
 	
-	R = glm::rotate(R, roll, glm::vec3(0,0,1));
-	R = glm::rotate(R,  yaw, glm::vec3(0,1,0));
+	R = glm::rotate(R, roll,  glm::vec3(0,0,1));
+	R = glm::rotate(R,  yaw,  glm::vec3(0,1,0));
 	R = glm::rotate(R, pitch, glm::vec3(1,0,0));
 	
 	return R;

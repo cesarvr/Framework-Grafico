@@ -17,7 +17,7 @@ Posicion::Posicion(){
 
 void Posicion::set_posicion(float x, float y, float z){
 
-    modelo = translate(modelo, vec3( x,y,z ) );
+    modelo = translate(modelo, vec3( x, y, z ) );
     
 }
 

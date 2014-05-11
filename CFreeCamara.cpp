@@ -28,9 +28,9 @@ void CFreeCamera::Update() {
     
 	look = glm::vec3(R*glm::vec4(0,0,1,0));
 	glm::vec3 tgt  = position+look;
-	up   = glm::vec3(R*glm::vec4(0,1,0,0));
-	right = glm::cross(look, up);
-	V = glm::lookAt(position, tgt, up);
+	up      = glm::vec3(R*glm::vec4(0,1,0,0));
+	right   = glm::cross(look, up);
+	V       = glm::lookAt(position, tgt, up);
     
 	//normalize
 	//look = glm::normalize(look);

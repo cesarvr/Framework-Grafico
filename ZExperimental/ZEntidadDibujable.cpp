@@ -11,9 +11,11 @@
 
 ZEntidadDibujable::ZEntidadDibujable() {
     
-    glClearColor(0.1f, 0.7f, 0.0f, 1.0f);
+    glClearColor(0.1f, 0.3f, 0.0f, 1.0f);
+    
     // Enable depth test
     glEnable(GL_DEPTH_TEST);
+    
     // Accept fragment if it closer to the camera than the former one
     glDepthFunc(GL_LESS);
     
@@ -28,8 +30,9 @@ void ZEntidadDibujable::update(){
     
     
     
-    mat4 matModelo     =    modelo.get_modelo();
+    mat4 matModelo     =    glm::mat4(1.0f); //modelo.get_modelo();
     mat4 matProjeccion =    camara->GetProjectionMatrix();
+                                                   
     mat4 matView       =    camara->GetViewMatrix();
     
     
@@ -49,12 +52,12 @@ void ZEntidadDibujable::draw(){
     glBindBuffer(GL_ARRAY_BUFFER, objGLBuffer.get_vbo());
     
     
-    glVertexAttribPointer(shader->getParametros("position"), TAMANO_POSICION, GL_FLOAT, GL_FALSE, TAMANO_PACK, 0);
+    glVertexAttribPointer(shader->getParametros("position"), TAMANO_POSICION, GL_FLOAT, GL_FALSE, objGLBuffer.vertices_tamano, 0);
     glEnableVertexAttribArray(shader->getParametros("position"));
     
     
     
-    glVertexAttribPointer(shader->getParametros("normal"), TAMANO_NORMAL, GL_FLOAT, GL_FALSE, TAMANO_PACK,
+    glVertexAttribPointer(shader->getParametros("normal"), TAMANO_NORMAL, GL_FLOAT, GL_FALSE, objGLBuffer.vertices_tamano,
                           (GLvoid*) (sizeof(float) * TAMANO_POSICION));
     glEnableVertexAttribArray(shader->getParametros("normal"));
     
